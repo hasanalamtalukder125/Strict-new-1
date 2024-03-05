@@ -1,0 +1,493 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+header{
+    background-color: #f6f9f9;
+    padding: 15px;
+}
+.wrapper{
+    width: 80%;
+    margin: auto;
+}
+.header_wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    align-items: center;}
+.logo{
+
+width: 20%;
+}
+.logo img{
+
+}
+
+nav{
+
+width: 50%;
+}
+nav ul{
+
+list-style: none;
+
+display: flex;
+
+justify-content: space-between;
+}
+nav ul li{
+
+margin-left: 50px;
+}
+nav ul li a{
+    
+text-decoration: none;
+    
+text-transform: uppercase;
+    
+color: #2d3950;
+    
+font-family: "Lato", sans-serif;
+}
+
+.banner{
+
+position: relative;
+}
+.banner img{
+
+width: 100%;
+}
+.banner_content{
+    
+position: absolute;
+    
+left: 50%;
+    
+top: 50%;
+    
+transform: translate(-50%,-50%);
+    
+text-align: center;
+    
+/* width: 50%; */
+}
+.banner_content h1{
+
+color: #fff;
+
+font-size: 80px;
+
+text-transform: uppercase;
+
+}
+.banner_content span{
+
+display: block;
+
+width: 100%;
+
+height: 2px;
+
+background: #15a4fa;
+}
+
+.banner_content p{
+
+color: #FFF;
+
+margin: 20px 0  40px;
+}
+
+.banner_content button{
+
+background: transparent;
+
+border: 1px solid #15a4fa;
+
+color: #fff;
+
+text-transform: capitalize;
+
+font-size: 14px;
+
+padding: 10px 20px;
+
+border-radius: 3px;
+}
+.banner_content button:hover{
+    background-color: #15a4fa;
+    transition: .5s all ease-in-out ;
+}
+
+.icon{
+    
+position: absolute;
+    
+bottom: 100px;
+    
+left: 50%;
+    
+transform: translate(-50%, 0px);
+    
+color: #fff;
+    
+font-size: 20px;
+animation: updown .5s alternate linear infinite;
+
+}
+
+@keyframes updown{
+    0%{
+        bottom: 100px;
+    }
+  100%{
+        bottom: 130px;
+}
+}
+
+.simple_section{
+    background-color: #f6f9f9;
+    padding: 60px 0;
+    text-align: center;
+}
+.simple_section h2{
+    text-transform: capitalize;
+    font-size: 30px;
+    color: #2d3950;
+    margin-bottom: 20px;   
+
+}
+.simple_section p{
+
+}
+.features{
+
+display: flex;
+
+justify-content: space-between;
+}
+.feature_section{
+    padding: 60px 0;
+
+}
+.feature_iteam{width: 30%;text-align: center;margin-bottom: 60px;}
+.feature_iteam h2{
+
+font-size: 22px;
+
+font-weight: 600;
+
+margin-bottom: 10px;
+}
+.feature_iteam p{
+
+}
+
+.icon_box{
+
+width: 70px;
+
+height: 70px;
+
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#48baff+0,48baff+50,5fc3ff+50,5fc3ff+100 */
+background: linear-gradient(to right,  #48baff 0%,#48baff 50%,#5fc3ff 50%,#5fc3ff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+
+
+
+color: #fff;
+
+font-size: 30px;
+
+display: flex;
+
+justify-content: center;
+
+align-items: center;
+
+margin: auto;
+
+margin-bottom: 20px;
+}
+
+.works_section{
+
+background: #f6f9f9;
+
+padding: 60px 0;
+
+/* text-align: center; */
+}
+.works_section h2{
+    font-size: 30px;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: center;}
+.works_section p{
+text-align: center;
+
+}
+.works{
+
+margin-top: 50px;
+
+display: flex;
+
+justify-content: space-between;
+
+align-items: center;
+flex-wrap: wrap;
+}
+.single_works{
+width: 30%;
+margin-bottom: 30px;
+position: relative;
+overflow: hidden;
+
+}
+.single_works img{
+
+width: 100%;
+
+display: block;
+}
+.single_works::before{
+    content: '';
+    width: 0%;
+    height: 0%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    
+    background-color: #15a4fa;
+    opacity: .0;
+    transition: .5s all ease-in-out;
+    border-radius: 50%;
+}
+.single_works:hover::before{
+    opacity: .5;
+    width: 150%;
+    height: 150%;
+}
+.contact_section{
+    background-image: url(../images/banner2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 70px 0;
+    position: relative;
+    z-index: 0;
+}
+.contact_section::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2d3950;
+    opacity: .7;
+    z-index: -1;
+}
+.contact_wrapper{
+
+width: 40%;
+
+margin: auto;
+}
+.contact_wrapper h2{
+    
+text-align: center;
+    
+text-transform: capitalize;
+    
+color: #fff;
+    
+font-size: 30px;
+}
+.contact_wrapper p{
+    
+text-align: center;
+    
+margin: 10px 0 30px;
+    
+color: #fff;
+}
+form{
+
+}
+form input{
+
+width: 100%;
+
+background: transparent;
+
+border: none;
+
+border: 1px solid #fff;
+
+padding: 14px 5px;
+
+margin-bottom: 15px;
+
+border-radius: 3px;
+}
+
+form textarea{
+
+width: 100%;
+
+border: 0;
+
+background: transparent;
+
+border: 1px solid #fff;
+
+border-radius: 3px;
+
+padding: 14px 5px;
+}
+.send_row{
+
+display: flex;
+
+justify-content: space-between;
+
+align-items: center;
+
+margin-top: 15px;
+}
+.checkbox{
+    
+display: flex;
+    
+align-items: center;
+}
+.checkbox input[type='checkbox']{
+    
+margin: 0;
+    
+width: auto;
+    
+margin-right: 10px;
+}
+.checkbox p{margin: 0;}
+.send_row input[type='Submit']{
+
+width: auto;
+
+padding: 10px 25px;
+
+background: #15a4fa;
+
+border: none;
+
+color: #fff;
+
+margin-bottom: 0;
+}
+
+
+
+.icon-list{
+
+position: absolute;
+
+top: 50%;
+
+left: 55%;
+
+transform: translate(-50%, -50%);
+
+display: flex;
+opacity: 0;
+transition : .5s all ease-in-out;
+}
+.icon-list a{
+
+color: #fff;
+
+height: 40px;
+
+width: 40px;
+
+display: block;
+
+border: 1px solid #fff;
+
+display: flex;
+
+justify-content: center;
+
+align-items: center;
+
+margin: 5px;
+
+border-radius: 3px;
+}
+
+.icon-list a:hover{
+    background-color: #15a4fa;
+    border-color: #15a4fa;
+}
+.single_works:hover .icon-list{
+    opacity: 1;
+    left: 50%;
+}
+
+footer{
+
+background: #f6f9f9;
+
+height: 50px;
+
+padding: 15px 0;
+}
+.footer_content{
+
+display: flex;
+
+width: 70%;
+
+align-items: center;
+
+margin: auto;
+
+justify-content: space-between;
+
+padding: 10px 0;
+}
+.footer_content p{
+    color: #999999;
+    text-transform: capitalize;
+}
+
+.footer_icon{color: white;
+    width: 40px;
+    height: 15px;
+    display: contents;
+}
+
+.footer_list{
+
+color: #1499ea;
+
+font-size: 20px;
+}
+.footer_icon ul{
+    
+}
+.footer_icon ul li{
+    
+list-style: none;
+    
+color: white;
+}
+.footer_icon ul li a{
+    
+}
